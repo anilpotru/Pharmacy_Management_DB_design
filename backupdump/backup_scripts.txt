@@ -1,0 +1,5 @@
+--BACKUP
+mysqldump -uroot -pr00tpa55 -P13306 -h 127.0.0.1  pharmacy > pharmacydump.sql
+
+--RESTORE
+mysql -uroot -pr00tpa55 -P13306 -h 127.0.0.1 pharmacy < pharmacydump.sql
